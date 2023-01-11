@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const getTasksRequest = async () => await axios.get("mysql://root:VlOtDISc9Fy578ekoeqZ@containers-us-west-28.railway.app:6602/railway/tasks");
 
-export const createTaskRequest = async (task) => await axios.post('https://creador-tareas-production.up.railway.app/tasks', task);
+export const createTaskRequest = async (task) => await axios.post('mysql://root:VlOtDISc9Fy578ekoeqZ@containers-us-west-28.railway.app:6602/railway/tasks', task);
 
 export const deleteTaskRequest = async (id) => await axios.delete(`https://creador-tareas-production.up.railway.app/tasks/${id}`);
 
