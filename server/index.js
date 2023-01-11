@@ -19,4 +19,4 @@ app.use(indexRoutes);
 app.use(taskRoutes)
 app.use(express.static(join(__dirname, '../client/dist')));
 
-app.listen(PORT);
+app.listen(process.env.PORT || PORT);
