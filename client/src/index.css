@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #000;
+}
+nav {
+    background-color: #1a1919;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover{
+    color: #02f4f2;
+}
+h1{
+    margin: 20px 0;
+    color: #02f4f2;
+    text-align: center;
+}
+.flex-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    gap: 20px;
+}
+.box-task{
+    background-color: #e5e5e5;
+    width: 300px;
+    min-width: 200px;
+    box-shadow: 0 10px 10px #02f4f2;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    line-height: 25px;
+}
+div h2{
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+}
+div p{
+    font-size: 14px;
+    color: #444;
+}
+p::first-letter {
+    text-transform: uppercase;
+}
+h2::first-letter {
+    text-transform: uppercase;
+} 
+div span{
+    font-size: 12px;
+    display: block;
+    color: #000;
+}
+.task-done{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.box-botton{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+button{
+    background-color: #02c4c2;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    color: #fff;
+}
+button:hover{
+    background-color: #02f4f2;
+}
+.box-form{
+    display: flex;
+    justify-content: center;
+}
+label{
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+input{
+    width: 300px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #02f4f2;
+}
+textarea{
+    resize: none;
+    border: none;
+    outline: none;
+    width: 600px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #02f4f2;
+}
+.bt-save{
+    width: 10%;
+}
