@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const getTasksRequest = async () => await axios.get("https://creador-tareas-production.up.railway.app/tasks");
+export const getTasksRequest = async () => await axios.get("mysql://root:VlOtDISc9Fy578ekoeqZ@containers-us-west-28.railway.app:6602/railway/tasks");
 
 export const createTaskRequest = async (task) => await axios.post('https://creador-tareas-production.up.railway.app/tasks', task);
 
